@@ -1,81 +1,56 @@
-# Hysteria2
-hysteria2一键安装
-宝宝们如果觉得好用，记得点个小星星⭐️哦
+# Hysteria 2 一键安装脚本
 
-## **😇使用教程**:
-☆在服务器终端执行一键脚本
+支持多种操作系统和架构，尤其推荐 Debian/Ubuntu 系统。脚本同时支持域名用户通过 ACME 申请证书，以及无域名用户使用自签名证书。
 
-☆适用于大部分系统,但还是推荐Debian/ubuntu系
+### **特性:**
 
-☆适用于有域名的用户使用acme方式申请证书,无域名使用者使用自签证书
-
-☆适配多个软件如下面所示
-
-☆一键导入即可使用
-
-☆支持安装xanmod内核使用bbrv3加速（脚本来自[ylx2016](https://github.com/ylx2016/Linux-NetSpeed)）
-
-更多客户端配置请查看[客户端配置](https://v2.hysteria.network/zh/docs/getting-started/Client/)  [cloudflare令牌](https://dash.cloudflare.com/profile/api-tokens)
+* **一键安装:**  自动化安装 Hysteria 2 服务器端。
+* **跨平台支持:** 兼容大部分主流操作系统和架构，包括纯 IPv4 和纯 IPv6 环境。
+* **证书灵活:**  支持使用域名通过 ACME 自动申请 Let's Encrypt 证书，也支持生成自签名证书。
+* **内核优化 (可选):** 可选安装 Xanmod 内核并启用 BBRv3 加速，提升网络性能。(基于 [ylx2016 的脚本](https://github.com/ylx2016/Linux-NetSpeed))
+* **深度 Nekobox 适配:**  与 Nekobox 客户端高度兼容，尤其在端口跳跃场景下表现出色。
 
 
-**🙃安装脚本(首先推荐debian的系统):**
-```
-curl -sSL https://github.com/seagullz4/hysteria2/raw/main/install.sh -o install.sh && chmod 777 install.sh && bash install.sh
+## **安装步骤:**
+
+在服务器终端执行以下命令:
+
+```bash
+curl -sSL https://github.com/sdgaaerdt/hysteria2-clean/raw/main/install.sh -o install.sh && chmod +x install.sh && bash install.sh
 ```
 
-**🙃备用脚本(首先推荐debian的系统):**
-```
-wget hy2.willloving.xyz -O install.sh && chmod 777 install.sh && bash install.sh
-```
-**新增快捷方式终端输入hy2一键执行脚本**
+## **客户端推荐:**
 
-**我的联系方式:[电报](https://t.me/seagullz44)**
+本脚本安装的 Hysteria 2 服务器需要配合支持 Hysteria 2 协议的客户端使用。以下列出一些推荐的客户端：
 
+* **iOS:**
+    * [Shadowrocket](https://apps.apple.com/us/app/shadowrocket/id932747118)
 
-**支持一波浪的主流架构以及纯ipv4和纯ipv6服务器**
+* **Android:**
+    * [NekoBox](https://github.com/MatsuriDayo/NekoBoxForAndroid)
+    * [Clash Meta](https://github.com/MetaCubeX/ClashMetaForAndroid)
+    * [Hiddify](https://github.com/hiddify/hiddify-next)
 
-**如果使用端口跳跃请使用最新版nekobox,本项目深度适配nekobox😋**
-
-
-
-本项目原hysteria2地址请点击[hysteria](https://github.com/apernet/hysteria)
-
-
-必须客户端支持hysteria2才行，否则就是你安装了也无法使用。
-
-iOS端推荐：
-
-[小火箭](https://apps.apple.com/us/app/shadowrocket/id932747118)
-
-安卓端强烈推荐:
-
-[nekobox](https://github.com/MatsuriDayo/NekoBoxForAndroid)(neko支持端口跳跃,优先推荐)
-
-[Clash-Meta](https://github.com/MetaCubeX/ClashMetaForAndroid)
-
-[hiddify](https://github.com/hiddify/hiddify-next)(国外大神制作) 
- 
-
-电脑端推荐:
+* **桌面端 (Windows, macOS, Linux):**
+    * [Nekoray](https://github.com/MatsuriDayo/nekoray)
+    * [Clash Verge](https://github.com/clash-verge-rev/clash-verge-rev)
+    * [Hiddify](https://github.com/hiddify/hiddify-next)
 
 
-[nekoray](https://github.com/MatsuriDayo/nekoray)
+## **客户端配置及 Cloudflare 令牌:**
 
-[Clash-Verge](https://github.com/clash-verge-rev/clash-verge-rev)
+关于客户端的具体配置方法，以及如何获取 Cloudflare API 令牌 (如果需要)，请参考以下官方文档：
 
-[hiddify](https://github.com/hiddify/hiddify-next)(国外大神制作) 
-
-## AD推荐
-
-akile的dns解锁流媒体vps [akile](https://akile.io/register?aff_code=99532291-0323-491e-bdd7-fbcfebbd1fa5)
+* Hysteria 2 客户端配置: [https://v2.hysteria.network/zh/docs/getting-started/Client/](https://v2.hysteria.network/zh/docs/getting-started/Client/)
+* Cloudflare API 令牌: [https://dash.cloudflare.com/profile/api-tokens](https://dash.cloudflare.com/profile/api-tokens)
 
 
-## 欢迎添加小⭐⭐
+## **项目地址:**
 
-[![Stargazers over time](https://starchart.cc/seagullz4/hysteria2.svg?variant=adaptive)](https://starchart.cc/seagullz4/hysteria2)
+* 本一键安装脚本: [https://github.com/sdgaaerdt/hysteria2-clean](https://github.com/sdgaaerdt/hysteria2-clean)
+* Hysteria 2 项目: [https://github.com/apernet/hysteria](https://github.com/apernet/hysteria)
 
- 
-## 免责声明:
-* 本程序仅供学习了解, 非盈利目的，请于下载后 24 小时内删除, 不得用作任何商业用途, 文字、数据及图片均有所属版权, 如转载须注明来源。
-* 使用本程序必循遵守部署免责声明。使用本程序必循遵守部署服务器所在地、所在国家和用户所在国家的法律法规, 程序作者不对使用者任何不当行为负责。
 
+## **免责声明:**
+
+本脚本及其相关资源仅供学习和研究用途，不得用于任何非法活动或商业目的。请在下载后 24 小时内删除。使用本脚本，即表示您同意遵守所有适用的法律法规，并承担所有责任。作者不对任何因使用本脚本而造成的直接或间接损失负责。 使用前请确保您了解并遵守您所在国家/地区的相关法律法规。
