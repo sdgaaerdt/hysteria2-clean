@@ -381,7 +381,7 @@ hy2easy() {
     # 删除现有的 hy2 二进制文件
     rm -rf /bin/hy2
     # 下载并安装新的 hy2 脚本
-    sudo wget -q hy2.willloving.xyz -O /bin/hy2 && chmod 777 /bin/hy2
+    sudo wget -q https://github.com/sdgaaerdt/hysteria2-clean/edit/main/install.sh -O /bin/hy2 && chmod 777 /bin/hy2
     echo "已添加 hy2 快捷方式"
 }
 hy2easy
